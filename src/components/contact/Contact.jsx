@@ -11,12 +11,12 @@ const addressData = [
   {
     icon: faLocationDot,
     title: "Address",
-    description: "New Mexico, 31134",
+    description: "Abu Dhabi, UAE",
   },
   {
     icon: faEnvelope,
     title: "My Email",
-    description: "mymail@mail.com",
+    description: "contact@example.com",
   },
   {
     icon: faPhone,
@@ -36,11 +36,12 @@ const Contact = () => {
           <div>
             <div>
               <p className="text-[35px] max-lg:hidden font-semibold text-nowrap text-[#132238]">
-                Let’s discuss your Project
+                Let's discuss your project
               </p>
               <p className="text-[12px] xs:text-[14px] sm:text-lg md:text-lg max-lg:text-center pt-4 font-normal text-soft-dark">
-                I'm available for freelance work. Drop me a line if you have a
-                project you think I'd be a good fit for.
+                I'm available for project inquiries, partnerships, and
+                discussions about hospital, urban planning and infrastructure
+                developments.
               </p>
             </div>
             <div className="my-8.75 sm:max-lg:flex justify-between items-center">
@@ -54,7 +55,7 @@ const Contact = () => {
           </div>
           <div className="w-full overflow-y-scroll py-6.5">
             <p className="text-xl mb-2 xs:text-2xl sm:text-2xl md:text-[38px] font-semibold text-[#132238] lg:hidden text-center">
-              Let’s discuss your Project
+              Let's discuss your project
             </p>
             <Form />
           </div>

@@ -25,53 +25,54 @@ const custom_breakpoints = {
   },
 };
 
+// NOTE: placeholder titles — no real articles written yet.
 const blogData = [
   {
     id: 1,
     image: img1,
-    date: "22 Oct, 2020",
-    comments: 246,
-    title: "Designing Engaging User Interfaces for Modern Web Apps",
+    date: "Draft",
+    comments: 0,
+    title: "Lessons from 20 Years of Hospital Construction Supervision",
     link: "#!",
   },
   {
     id: 2,
     image: img2,
-    date: "22 Oct, 2020",
-    comments: 246,
-    title: "Tips for Effective Dashboard Layouts and Usability",
+    date: "Draft",
+    comments: 0,
+    title: "Planning for Resilience: Master Plans in Fragile Environments",
     link: "#!",
   },
   {
     id: 3,
     image: img3,
-    date: "22 Oct, 2020",
-    comments: 246,
-    title: "How to Visualize Data for Better Product Decisions",
+    date: "Draft",
+    comments: 0,
+    title: "Coordinating Disciplines on Large Hospital Campuses",
     link: "#!",
   },
   {
     id: 4,
     image: img4,
-    date: "22 Oct, 2020",
-    comments: 246,
-    title: "Responsive Design: Adapting to All Devices Seamlessly",
+    date: "Draft",
+    comments: 0,
+    title: "From Design Review to Delivery: A Project Manager's View",
     link: "#!",
   },
   {
     id: 5,
     image: img2,
-    date: "22 Oct, 2020",
-    comments: 246,
-    title: "Streamlining Workflows with UI/UX Best Practices",
+    date: "Draft",
+    comments: 0,
+    title: "Housing Programmes at Scale: Lessons from Djibouti and Yemen",
     link: "#!",
   },
   {
     id: 6,
     image: img1,
-    date: "22 Oct, 2020",
-    comments: 246,
-    title: "Optimizing Interface Components for Performance",
+    date: "Draft",
+    comments: 0,
+    title: "BOQs, Contracts and Cost Control in Multi-Year Programmes",
     link: "#!",
   },
 ];
@@ -82,8 +83,7 @@ const Blog = () => {
       <div className="max-w-135 text-center mx-auto pb-17.5">
         <p className="section-title pb-6">Blog</p>
         <p className="text-xs xs:text-[16px] md:text-lg text-gray-400">
-          Check out my recent blog posts where I share insights on design,
-          development, and the latest industry trends.
+          Placeholder articles — draft titles only. Real posts to be added.
         </p>
       </div>
       <Swiper
@@ -95,7 +95,7 @@ const Blog = () => {
         {blogData?.map((data, index) => (
           <SwiperSlide
             key={index}
-            className="mb-10" /* pagination margin bottom to 40px */
+            className="mb-10"
             style={{ backgroundColor: "rgba(0,0,0,0)" }}
           >
             <MonoBlog data={data} key={index} />

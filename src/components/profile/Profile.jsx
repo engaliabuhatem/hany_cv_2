@@ -16,7 +16,7 @@ const Profile = () => {
             <img
               className="bg-soft-white h-[120%] object-cover"
               src={person}
-              alt=""
+              alt="Hani Al Sahooly"
             />
           </div>
           {/* Social media section */}
@@ -33,25 +33,28 @@ const Profile = () => {
           <h2
             className={`text-2xl xxs:text-3xl sm:text-4xl lg:text-[38px] text-[min(24px,38px)] max-md:text-center font-semibold mb-8`}
           >
-            I am Professional User Experience Designer
+            Founder, Project Manager &amp; Senior Architect
           </h2>
           <div
             className={`text-xs xs:text-[16px] lg:text-lg font-normal max-md:text-center text-gray-600`}
           >
             <p className={``}>
-              I design and develop services for customers specializing creating
-              stylish, modern websites, web services and online stores. My
-              passion is to design digital user experiences.
+              I'm Hani Al Sahooly, founder of HS Group, Infra Constructions and
+              HS Investments. Over more than 20 years I've led design review,
+              construction supervision and project management for hospital,
+              urban planning and infrastructure projects across the Middle East
+              and Africa.
             </p>
             <p className="mt-3">
-              I design and develop services for customers specializing creating
-              stylish, modern websites, web services.
+              Based in Abu Dhabi, UAE. B.Sc. Architectural Engineering —
+              Applied Science University, Amman (1997). Member, Yemeni
+              Engineers Syndicate.
             </p>
           </div>
           <div className="mt-8 flex max-md:justify-center">
             <a
               className="btn xxs:btn-lg px-6 max-xs:px-2 xxs:py-3 btn-primary text-xs xxs:text-[14px] sm:text-[16px]"
-              href="#!"
+              href="#portfolio"
             >
               My Projects
             </a>

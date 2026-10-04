@@ -9,25 +9,40 @@ import "./testimonial.css";
 
 const testimonialData = [
   {
-    message:
-      "Working with this team was a fantastic experience. Their attention to detail and commitment to quality exceeded our expectations.",
-    quote: `From the initial consultation to the final delivery, every step was handled professionally. The end result was a product that not only met our needs but also impressed our stakeholders. Highly recommended!`,
-    name: "Esther Howard",
-    designation: "Managing Director, ABC Company",
+    message: "Funding for hospital construction in Somalia",
+    quote: `Government of the UAE — funded the construction of two 50-bed hospital buildings in Buro and Berbera.`,
+    name: "Government of the UAE",
+    designation: "Funder — Hospital construction, Somalia",
   },
   {
-    message:
-      "Their expertise in UI/UX design helped us transform our digital presence and improve user engagement.",
-    quote: `The team demonstrated a deep understanding of our requirements and delivered a solution that was both visually appealing and highly functional. Communication was clear throughout the project.`,
-    name: "Ali Haider",
-    designation: "COO, XYZ Company",
+    message: "Comprehensive land-use master plan for a 2,200 km² border region",
+    quote: `Jordan Valley Authority — client for the Wadi Araba Integrated Master Plan, including 30-year infrastructure planning and investment strategy.`,
+    name: "Jordan Valley Authority",
+    designation: "Client — Wadi Araba Integrated Master Plan, Jordan",
   },
   {
-    message:
-      "Professional, reliable, and creative—everything you want in a development partner.",
-    quote: `They delivered our project on time and went above and beyond to ensure our satisfaction. The new features have made a significant difference for our users. We look forward to working together again.`,
-    name: "Elon Max",
-    designation: "Managing Director, KFC Company",
+    message: "Funding for the 1,600 housing units programme in Djibouti",
+    quote: `WATANIA Real Estate — funded 1,600 housing units for mass social housing in Balbala, Djibouti.`,
+    name: "WATANIA Real Estate",
+    designation: "Funder — Housing programme, Kuwait",
+  },
+  {
+    message: "Housing projects delivered in Yemen",
+    quote: `Emirates Red Crescent — 800 mud housing units in Tarim-Hadramout and 200 stone/concrete units in Mukalla.`,
+    name: "Emirates Red Crescent",
+    designation: "Client — Housing projects, Yemen",
+  },
+  {
+    message: "Aden City Master Plan Update",
+    quote: `Halcrow (UK) — partner on revising and updating the Aden City Master Plan, including building stock analysis and heritage preservation.`,
+    name: "Halcrow (UK)",
+    designation: "Partner — Aden City Master Plan Update, Yemen",
+  },
+  {
+    message: "Educational hospital campus in Sana'a",
+    quote: `Sana'a University — client for the 90,855 m² educational hospital campus, covering design review and construction supervision across 7 building types.`,
+    name: "Sana'a University",
+    designation: "Client — Educational hospital campus, Yemen",
   },
 ];
 
@@ -35,7 +50,7 @@ const Testimonial = () => {
   return (
     <div className="flex mx-auto justify-center px-2 max-w-218 pb-10 md:pb-25">
       <div className="w-full h-full cursor-grab">
-        <p className="section-title mb-6 text-center">Testimonial</p>
+        <p className="section-title mb-6 text-center">Clients &amp; Funders</p>
         <Swiper
           id="testimonialSwiper"
           spaceBetween={30}

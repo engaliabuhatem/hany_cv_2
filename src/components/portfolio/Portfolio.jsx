@@ -10,55 +10,55 @@ const projectData = [
   {
     id: 1,
     image: card1,
-    category: "UI-UX DESIGN",
-    title: "Product Admin Dashboard",
+    category: "HEALTHCARE",
+    title: "Sana'a University Educational Hospital",
     description:
-      "I focus on crafting smooth, responsive interfaces that balance aesthetic appeal with practical functionality.",
+      "Design review and construction supervision for a 90,855 m² hospital campus covering civil, finishing, electrical, plumbing and mechanical works across 7 building types.",
     link: "#!",
   },
   {
     id: 2,
     image: card2,
-    category: "UI-UX DESIGN",
-    title: "Product Admin Dashboard",
+    category: "MASTER PLANNING",
+    title: "Socotra Development Master Plan",
     description:
-      "Designed an intuitive dashboard for product management, emphasizing clarity and user efficiency.",
+      "Master plan for Socotra Island (3,796 km²): feasibility studies, coordination with international and private funders, growth control and environmental preservation.",
     link: "#!",
   },
   {
     id: 3,
     image: card3,
-    category: "UI-UX DESIGN",
-    title: "Product Admin Dashboard",
+    category: "MASTER PLANNING",
+    title: "Wadi Araba Integrated Master Plan",
     description:
-      "Developed a modern admin panel with a focus on usability and seamless navigation for end users and so on.",
+      "Comprehensive land-use master plan for a 2,200 km² border region: 30-year infrastructure planning and investment strategy for the Jordan Valley Authority.",
     link: "#!",
   },
   {
     id: 4,
     image: card4,
-    category: "UI-UX DESIGN",
-    title: "Product Admin Dashboard",
+    category: "HEALTHCARE",
+    title: "Two Hospitals — Buro & Berbera, Somalia",
     description:
-      "Created a responsive dashboard layout that adapts smoothly across devices and screen sizes and so on.",
+      "Design review and construction supervision for two 50-bed hospital buildings, funded by the UAE.",
     link: "#!",
   },
   {
     id: 5,
     image: card5,
-    category: "UI-UX DESIGN",
-    title: "Product Admin Dashboard",
+    category: "HEALTHCARE",
+    title: "Al Amal Cancer Hospital, Aden",
     description:
-      "Implemented interactive charts and widgets to visualize product data effectively for stakeholders.",
+      "Design review and construction supervision for a 50,000 m² hospital with a $13M construction value.",
     link: "#!",
   },
   {
     id: 6,
     image: card6,
-    category: "UI-UX DESIGN",
-    title: "Product Admin Dashboard",
+    category: "HOUSING",
+    title: "1600 Housing Units, Balbala, Djibouti",
     description:
-      "Enhanced user experience by streamlining workflows and optimizing interface components and so on.",
+      "Design and quality control of 1,600 housing units for mass social housing, funded by WATANIA Real Estate (Kuwait).",
     link: "#!",
   },
 ];
@@ -73,8 +73,8 @@ const Portfolio = () => {
         <div className="max-sm:px-2 text-center mx-auto max-w-144.25">
           <p className="section-title ">Portfolio</p>
           <p className="font-normal text-[18px] max-sm:text-[14px] pt-6 text-gray-400">
-            Here's a selection of my recent work, showcasing my skills in
-            creating user-centric and visually appealing interfaces.
+            A selection of hospital, master planning and housing projects
+            delivered across the Middle East and Africa.
           </p>
         </div>
       </div>
@@ -90,7 +90,7 @@ const Portfolio = () => {
           href="#!"
           className="btn btn-primary py-3 px-6 mt-12.5 text-center text-[16px] font-semibold"
         >
-          More Project
+          More Projects
         </a>
       </div>
     </div>

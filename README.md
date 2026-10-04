@@ -19,7 +19,7 @@ git clone https://github.com/themewagon/picto.git
 2. Install Dependencies
 
 ```
-npm i
+npm install
 ```
 
 3. Run the development server:
