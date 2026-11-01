@@ -1,9 +1,23 @@
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { motion } from "framer-motion";
 
 const Projects = ({ data }) => {
+  const cardVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+    hover: { scale: 1.03, transition: { duration: 0.2 } },
+  };
+
   return (
-    <div className="max-w-106 rounded-lg outline-[#FFFFFF] hover:shadow-2xl duration-300 transition-all shadow-gray-300 border border-gray-200">
+    <motion.div
+      className="max-w-106 rounded-lg outline-[#FFFFFF] shadow-gray-300 border border-gray-200"
+      variants={cardVariants}
+      initial="hidden"
+      whileInView="visible"
+      whileHover="hover"
+      viewport={{ once: true, amount: 0.2 }}
+    >
       <img src={data?.image} alt={`${data?.title} image`} />
       <div className="p-4 xs:p-8">
         <p className="text-gray-400 text-xs font-medium">{data?.category}</p>
@@ -18,17 +32,14 @@ const Projects = ({ data }) => {
         </p>
         <a
           href={data?.link}
-          className="btn hover:border-picto-primary hover:text-picto-primary bg-white text-sm xs:text-[16px] font-semibold hover:gap-3 xs:hover:gap-4 transition-all duration-300 mt-5 xs:py-5.75 px-6 max-sm:w-full"
+          className="btn btn-primary mt-5 xs:py-5.75 px-6 max-sm:w-full"
         >
           Case Study
-          <span className="ms-1 xs:ms-3">
-            <FontAwesomeIcon icon={faArrowRight} size="l" className="" />
-          </span>
         </a>
-        {/* </p> */}
       </div>
-    </div>
+    </motion.div>
   );
 };
 
 export default Projects;
+

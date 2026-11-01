@@ -1,6 +1,7 @@
 import person from "../../assets/images/person.png";
 import "./introduction.css";
 import InformationSummary from "./InformationSummary";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 const informationSummaryData = [
   {
@@ -21,6 +22,10 @@ const informationSummaryData = [
 ];
 
 const Introduction = () => {
+  // Scroll progress for simple parallax on the portrait image
+  const { scrollYProgress } = useScroll();
+  const yTranslate = useTransform(scrollYProgress, [0, 0.5], [0, -30]);
+
   return (
     <div
       className="flex max-lg:flex-col-reverse sm:justify-between pt-10 lg:pt-31.5 lg:mb-27.5 max-xl:gap-2 p-2 max-xxl:px-4"
@@ -59,15 +64,18 @@ const Introduction = () => {
           </div>
         </div>
       </div>
-      <div
+      <motion.div
         className={`max-w-134 w-full h-full max-lg:mx-auto aspect-[536/636] relative`}
+        style={{ y: yTranslate }}
       >
-        <img
+        <motion.img
           className={`shadow-2xl shadow-gray-200 w-full h-full absolute bottom-0 object-cover bg-white rounded-3xl`}
           src={person}
           alt="Hani Al Sahooly"
+          whileHover={{ scale: 1.02 }}
+          transition={{ type: "spring", stiffness: 200 }}
         />
-      </div>
+      </motion.div>
     </div>
   );
 };
